@@ -159,3 +159,46 @@ section:nth-of-type(odd){background:var(--light);}
 footer{background:var(--dark);color:#cfd8dc;padding:3rem 0;}
 footer a{color:#cfd8dc;text-decoration:none;}
 footer a:hover{text-decoration:underline;color:#fff;}
+
+/* ====================  MOBILE TWEAKS  ==================== */
+
+/* 2.1  Navbar visível e legível no telemóvel ----------------*/
+@media (max-width: 991.98px) {      /* <  LG */
+  #mainNav.mobile-open,
+  #mainNav.scrolled          {      /* reuse class do teu JS */
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+  }
+
+  #mainNav.mobile-open .nav-link,
+  #mainNav.mobile-open .navbar-brand {
+    color: #0d6efd;                /* azul Bootstrap */
+  }
+
+  /* hamburger em azul */
+  .navbar-toggler-icon {
+    filter: invert(49%) sepia(78%) saturate(1627%) hue-rotate(186deg)
+            brightness(93%) contrast(101%);
+  }
+
+  /* menu aberto ocupa toda a largura */
+  .navbar-collapse.show {
+    padding: 0.5rem 1rem 1rem;
+  }
+}
+
+/* 2.2  Hero — padding & tipografia fluidos ------------------*/
+@media (max-width: 576px) {         /* XS e SM */
+  #hero .hero-card    { padding: 1.5rem; }
+  #hero .hero-title   { font-size: clamp(1.6rem, 6vw, 2rem); }
+  #hero .hero-subtitle{ font-size: clamp(1rem, 4.5vw, 1.25rem); }
+  /* botão ocupa largura total */
+  #hero .btn-lg       { width: 100%; padding: .6rem 1.2rem; font-size: 1rem; }
+}
+
+/* 2.3  Grid dos cartões — garante 1-coluna no XS -----------*/
+@media (max-width: 575.98px) {
+  .article-card.featured,
+  .article-card        { flex-direction: column; }   /* evita overflow */
+}
