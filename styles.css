@@ -164,6 +164,25 @@ footer a:hover{text-decoration:underline;color:#fff;}
 
 /* 2.1  Navbar visível e legível no telemóvel ----------------*/
 @media (max-width: 991.98px) {      /* <  LG */
+ /* Botão */
+  .navbar-toggler{
+    /* fundo branco levemente opaco */
+    background: rgba(255,255,255,.9);
+    border: 0;
+    padding: .45rem .7rem;        /* ligeiramente maior = mais fácil de clicar */
+    border-radius: .45rem;        /* cantos arredondados tal como nos cartões */
+    box-shadow: 0 2px 6px rgba(0,0,0,.12);
+  }
+
+  /* Ícone (3 riscazinhas) – substitui o SVG por um traço em #1f6feb */
+  .navbar-toggler-icon{
+    width: 1.35em;               /* maior que o default */
+    height: 1.35em;
+    background-size: 100% 100%;
+    /* novo SVG, cor = var(--primary)  */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%231f6feb' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    filter: none;                /* anula o invert() que tinhas */
+  }
   #mainNav.mobile-open,
   #mainNav.scrolled          {      /* reuse class do teu JS */
     background: rgba(255,255,255,0.95);
@@ -201,4 +220,16 @@ footer a:hover{text-decoration:underline;color:#fff;}
 @media (max-width: 575.98px) {
   .article-card.featured,
   .article-card        { flex-direction: column; }   /* evita overflow */
+}
+
+/* Galeria */
+#gallery { padding-top: 4rem; padding-bottom: 4rem; }
+#gallery img          { transition: transform .2s; }
+#gallery a:hover img  { transform: scale(1.04); }
+.modal-content        { background: transparent; }
+
+/* links-cartão: foco visível para acessibilidade */
+a:focus .article-card{
+  outline: 3px solid var(--primary);
+  outline-offset: 4px;
 }

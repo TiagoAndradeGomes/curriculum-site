@@ -17,20 +17,9 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
  
 </head>
+
 <body>
 
-<script>
-  // fundo branco translúcido quando a barra está aberta no mobile
-  const mainNav   = document.getElementById('mainNav');
-  const navCollapse = document.getElementById('navbarNav');
-
-  navCollapse.addEventListener('show.bs.collapse', () => {
-    mainNav.classList.add('mobile-open');
-  });
-  navCollapse.addEventListener('hide.bs.collapse', () => {
-    mainNav.classList.remove('mobile-open');
-  });
-</script>
 
   <!-- NAVBAR -->
   <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-light">
@@ -44,6 +33,7 @@
           <li class="nav-item"><a class="nav-link" href="#education">Formação</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Competências</a></li>
           <li class="nav-item"><a class="nav-link" href="#articles">Artigos</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#gallery">Galeria</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
       </div>
@@ -57,23 +47,22 @@
       <div class="row g-4 align-items-center justify-content-center">
         <div class="col-md-4 text-center">
 			<picture>
-  <!-- WEBP (se suportado) -->
-  <source
-    type="image/webp"
-    srcset="FotoLinkedin1-300.webp 300w,
-            FotoLinkedin1-600.webp 600w,
-            FotoLinkedin1-900.webp 900w"
-    sizes="(max-width: 576px) 80vw, 280px">
+			  <!-- WEBP (se suportado) -->
+			  <source
+				type="image/webp"
+				srcset="FotoLinkedin1-300.webp 300w,
+						FotoLinkedin1-600.webp 600w,
+						FotoLinkedin1-900.webp 900w"
+				sizes="(max-width: 576px) 80vw, 280px">
 
-  <!-- fallback JPEG (sempre funciona) -->
-  <img
-    src="FotoLinkedin1.jfif"
-    class="hero-photo img-fluid rounded-circle shadow mb-3 mb-md-0"
-    alt="Foto de Tiago"
-    width="180" height="180"
-    loading="lazy">
-</picture>
-
+			  <!-- fallback JPEG (sempre funciona) -->
+			  <img
+				src="FotoLinkedin1.jfif"
+				class="hero-photo img-fluid rounded-circle shadow mb-3 mb-md-0"
+				alt="Foto de Tiago"
+				width="180" height="180"
+				loading="lazy">
+			</picture>
 
         </div>
         <div class="col-md-8 text-md-start text-center">
@@ -443,18 +432,22 @@ Pratico Judo, modalidade na qual possuo o grau de 1º Dan (cinto negro), experi�
     <div class="row g-4">
 
       <!-- === Destaques ================================================== -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card article-card featured p-3 h-100">
-          <h6 class="fw-semibold mb-1">
-            Esri International IMGIS 2024 <small class="text-muted">(Frankfurt)</small>
-          </h6>
-          <p class="small mb-1">9‑11 abr 2024 &nbsp;•&nbsp; 2 apresentações</p>
-          <ul class="small mb-0 ps-3">
-            <li>Sessão plenária: integração BIM‑SIG em grandes infra‑estruturas subterrâneas;</li>
-            <li>Sessão técnica: processos colaborativos &amp; gestão da informação no PGDL.</li>
-          </ul>
-        </div>
-      </div>
+		<div class="col-md-6 col-lg-4">
+		  <a href="https://mediaspace.esri.com/media/t/1_0jsl3v39/338142532"
+			 target="_blank" rel="noopener"
+			 class="text-decoration-none text-reset">
+			<div class="card article-card featured p-3 h-100">
+			  <h6 class="fw-semibold mb-1">
+				Esri International IMGIS 2024 <small class="text-muted">(Frankfurt)</small>
+			  </h6>
+			  <p class="small mb-1">9-11 abr 2024 &nbsp;•&nbsp; 2 apresentações</p>
+			  <ul class="small mb-0 ps-3">
+				<li>Sessão plenária: integração BIM-SIG em grandes infra-estruturas subterrâneas;</li>
+				<li>Sessão técnica: processos colaborativos &amp; gestão da informação no PGDL.</li>
+			  </ul>
+			</div>
+		  </a>
+		</div>
 
       <div class="col-md-6 col-lg-4">
         <div class="card article-card featured p-3 h-100">
@@ -521,13 +514,23 @@ Pratico Judo, modalidade na qual possuo o grau de 1º Dan (cinto negro), experi�
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card article-card p-3 h-100">
-          <h6 class="fw-semibold mb-1">AEC Fórum 2024 – PTPC</h6>
-          <p class="small mb-0">Lisboa | 5 dez 2024.</p>
-        </div>
-      </div>
-
+		<!-- AEC Fórum 2024 – PTPC -->
+		<div class="col-md-6 col-lg-4">
+		  <a href="https://www.youtube.com/watch?v=ZnFEJbj8IA0"
+			 target="_blank" rel="noopener"
+			 class="text-decoration-none text-reset">
+			<div class="card article-card featured p-3 h-100">
+			  <h6 class="fw-semibold mb-1">
+				AEC Fórum 2024 – PTPC <small class="text-muted">(Lisboa)</small>
+			  </h6>
+			  <p class="small mb-1">5 dez 2024 &nbsp;•&nbsp; 1 apresentação</p>
+			  <ul class="small mb-0 ps-3">
+				<li>Integração SIG-BIM no Plano Geral de Drenagem de Lisboa.</li>
+			  </ul>
+			</div>
+		  </a>
+		</div>
+		
       <div class="col-md-6 col-lg-4">
         <div class="card article-card p-3 h-100">
           <h6 class="fw-semibold mb-1">ENEG 2023</h6>
@@ -556,12 +559,22 @@ Pratico Judo, modalidade na qual possuo o grau de 1º Dan (cinto negro), experi�
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card article-card p-3 h-100">
-          <h6 class="fw-semibold mb-1">Webinar Autodesk + BIM Fórum Brasil 2022</h6>
-          <p class="small mb-0">Experiência de adoção do BIM no PGDL.</p>
-        </div>
-      </div>
+		<!-- Webinar Autodesk + BIM Fórum Brasil 2022 -->
+		<div class="col-md-6 col-lg-4">
+		  <a href="https://autodesk.wistia.com/medias/aasjt88lrj?mktvar002=5273805006%7CEML%7C630148528&mkt_tok=OTE4LUZPRC00MzMAAAGGB-oHPSAJjMEP3pIEUbpXNXR8mJriR_W5l4-6qtQs1iv8PjQ8EA01fhHWWg-Z1a04G4X7FGHOkdT7FMQNL2uBjzrGBNBXjZvu33Qtc-QVbtY9dsP3fZ7P"
+			 target="_blank" rel="noopener"
+			 class="text-decoration-none text-reset">
+			<div class="card article-card featured p-3 h-100">
+			  <h6 class="fw-semibold mb-1">
+				Webinar Autodesk + BIM Fórum Brasil 2022 <small class="text-muted">(online)</small>
+			  </h6>
+			  <p class="small mb-1">ago 2022 &nbsp;•&nbsp; 1 apresentação</p>
+			  <ul class="small mb-0 ps-3">
+				<li>Experiência de adoção do BIM no Plano Geral de Drenagem de Lisboa.</li>
+			  </ul>
+			</div>
+		  </a>
+		</div>
 
       <div class="col-md-6 col-lg-4">
         <div class="card article-card p-3 h-100">
@@ -600,6 +613,187 @@ Pratico Judo, modalidade na qual possuo o grau de 1º Dan (cinto negro), experi�
   </div><!-- /.container -->
 </section>
 
+<!-- ========== GALERIA ================================================== -->
+<section id="gallery" class="py-5">
+  <div class="container" data-aos="fade-right">
+    <h2 class="section-title mb-4">Galeria de Apresentações</h2>
+
+    <div class="row g-3">
+     
+	 <!-- === Foto 1 ==================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/20240405_EsriIMGIS_1.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/20240405_EsriIMGIS_1.jpeg"
+           data-bs-caption="Esri IMGIS 2024 – Frankfurt (1/3)">
+          <img src="assets/img/20240405_EsriIMGIS_1-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="Esri IMGIS 2024 (1)"
+               loading="lazy">
+        </a>
+      </div>
+
+      <!-- === Foto 2 ==================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/20240405_EsriIMGIS_2.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/20240405_EsriIMGIS_2.jpeg"
+           data-bs-caption="Esri IMGIS 2024 – Frankfurt (2/3)">
+          <img src="assets/img/20240405_EsriIMGIS_2-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="Esri IMGIS 2024 (2)"
+               loading="lazy">
+        </a>
+      </div>
+	  
+      <!-- === Foto 3 ==================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/AutodeskUniversity2022_1.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/AutodeskUniversity2022_1.jpeg"
+           data-bs-caption="Autodesk University 2022 – New Orleans (1/2)">
+          <img src="assets/img/AutodeskUniversity2022_1-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="Autodesk University 2022 (1)"
+               loading="lazy">
+        </a>
+      </div>
+
+       <!-- === Foto 4 ==================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/2021ENG.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/2021ENG.jpeg"
+           data-bs-caption="ENEG 2021 – Apresentação">
+          <img src="assets/img/2021ENG-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="ENEG 2021"
+               loading="lazy">
+        </a>
+      </div>
+
+      <!-- === Foto 5 ==================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/2023_ENEGJopa.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/2023_ENEGJopa.jpeg"
+           data-bs-caption="ENG Jopa 2023 – Sessão 1">
+          <img src="assets/img/2023_ENEGJopa-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="ENG Jopa 2023 (1)"
+               loading="lazy">
+        </a>
+      </div>
+
+      <!-- === Foto 6 =================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/Breakthrough_2023_1.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/Breakthrough_2023_1.jpeg"
+           data-bs-caption="ITA Breakthrough 2023 – Lisboa">
+          <img src="assets/img/Breakthrough_2023_1-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="ITA Breakthrough 2023"
+               loading="lazy">
+        </a>
+      </div>
+
+      <!-- === Foto 7 ==================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/2023_ENEGJopa_2.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/2023_ENEGJopa_2.jpeg"
+           data-bs-caption="ENG Jopa 2023 – Sessão 2">
+          <img src="assets/img/2023_ENEGJopa_2-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="ENG Jopa 2023 (2)"
+               loading="lazy">
+        </a>
+      </div>
+
+      <!-- === Foto 8 ==================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/20220909_CongIntEngMadeira.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/20220909_CongIntEngMadeira.jpeg"
+           data-bs-caption="Congresso Internacional Engenharia – Madeira 2022">
+          <img src="assets/img/20220909_CongIntEngMadeira-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="Congresso Internacional Madeira 2022"
+               loading="lazy">
+        </a>
+      </div>
+
+
+      <!-- === Foto 9 ==================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/20240405_EsriIMGIS_3.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/20240405_EsriIMGIS_3.jpeg"
+           data-bs-caption="Esri IMGIS 2024 – Frankfurt (3/3)">
+          <img src="assets/img/20240405_EsriIMGIS_3-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="Esri IMGIS 2024 (3)"
+               loading="lazy">
+        </a>
+      </div>
+
+
+      <!-- === Foto 10 ==================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/AutodeskUniversity2022_2.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/AutodeskUniversity2022_2.jpeg"
+           data-bs-caption="Autodesk University 2022 – New Orleans (2/2)">
+          <img src="assets/img/AutodeskUniversity2022_2-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="Autodesk University 2022 (2)"
+               loading="lazy">
+        </a>
+      </div>
+
+
+      <!-- === Foto 11 =================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/PTBIM2022.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/PTBIM2022.jpeg"
+           data-bs-caption="PTBIM 2022 – Apresentação 1">
+          <img src="assets/img/PTBIM2022-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="PTBIM 2022 (1)"
+               loading="lazy">
+        </a>
+      </div>
+
+      <!-- === Foto 12 =================================================== -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="assets/img/PTBIM2022_2.jpeg"
+           data-bs-toggle="modal" data-bs-target="#lightbox"
+           data-bs-img="assets/img/PTBIM2022_2.jpeg"
+           data-bs-caption="PTBIM 2022 – Apresentação 2">
+          <img src="assets/img/PTBIM2022_2-thumb.webp"
+               class="img-fluid rounded-3 shadow-sm"
+               alt="PTBIM 2022 (2)"
+               loading="lazy">
+        </a>
+      </div>
+
+      <!-- Repete o bloco .col-6 … para mais fotos -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section>
+
+<!-- ========== LIGHTBOX (Bootstrap Modal) ============================== -->
+<div class="modal fade" id="lightbox" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img id="lightbox-img" class="img-fluid rounded-4" alt="">
+      <p id="lightbox-cap" class="text-center text-white mt-2"></p>
+    </div>
+  </div>
+</div>
+
 
   <!-- CONTACT -->
   <section id="contact">
@@ -629,6 +823,32 @@ Pratico Judo, modalidade na qual possuo o grau de 1º Dan (cinto negro), experi�
   <!-- JS → Bootstrap, AOS & navbar scroll effect -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+  <!-- 2) 𝗦𝗰𝗿𝗶𝗽𝘁𝘀 𝗰𝗼𝗺 𝗔𝗖𝗖𝗘𝗦𝗦𝗢 𝗮𝗼 𝗗𝗢𝗠 𝗲 𝗮𝗼 𝗕𝗼𝗼𝘁𝘀𝘁𝗿𝗮𝗽 -->
+<script>
+  /* ---------- Lightbox ---------- */
+  const lightbox = document.getElementById('lightbox');
+  const imgTag   = document.getElementById('lightbox-img');
+  const capTag   = document.getElementById('lightbox-cap');
+
+  lightbox.addEventListener('show.bs.modal', e => {
+    const trigger = e.relatedTarget;
+    imgTag.src         = trigger.dataset.bsImg;
+    capTag.textContent = trigger.dataset.bsCaption || '';
+  });
+
+  /* ---------- Navbar mobile-open ---------- */
+  const mainNav     = document.getElementById('mainNav');
+  const navCollapse = document.getElementById('navbarNav');
+
+  navCollapse.addEventListener('show.bs.collapse', () => {
+    mainNav.classList.add('mobile-open');
+  });
+  navCollapse.addEventListener('hide.bs.collapse', () => {
+    mainNav.classList.remove('mobile-open');
+  });
+</script>
+  
   <script>
     AOS.init({once:true,duration:800});
     // change navbar bg when scroll
