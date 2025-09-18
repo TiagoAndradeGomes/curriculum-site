@@ -1001,7 +1001,17 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 </script>
 	
 </body>
+<script>
+  const toTop = document.getElementById('toTop');
+  const toggleToTop = ()=> toTop.classList.toggle('show', window.scrollY > 600);
+  window.addEventListener('scroll', toggleToTop, {passive:true});
+  toggleToTop();
+  toTop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+</script>
+
+	
 </html>
+
 
 
 
