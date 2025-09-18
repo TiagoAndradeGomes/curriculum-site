@@ -34,6 +34,10 @@ img{max-width:100%;height:auto;}
 .nav-link{font-weight:500; transition:opacity .15s ease;}
 .nav-link:hover{opacity:.85;}
 
+.navbar.scrolled{
+  background:#fff; box-shadow:0 2px 4px rgba(0,0,0,.05);
+  backdrop-filter: blur(8px);
+}
 
 /* default (over hero) → white text */
 .navbar:not(.scrolled) .navbar-brand,
@@ -234,6 +238,13 @@ footer a:hover{text-decoration:underline;color:#fff;}
 #gallery img          { transition: transform .2s; }
 #gallery a:hover img  { transform: scale(1.04); }
 .modal-content        { background: transparent; }
+#gallery a{ cursor: zoom-in; }
+#gallery img{ transition: transform .2s ease, box-shadow .2s ease; }
+#gallery a:hover img{
+  transform: scale(1.03);
+  box-shadow: 0 10px 22px rgba(0,0,0,.16);
+}
+
 
 /* links-cartão: foco visível para acessibilidade */
 a:focus .article-card{
@@ -289,4 +300,5 @@ html,body{overflow-x:hidden;}
   border:1px solid rgba(0,0,0,.1); z-index:1030;
 }
 #toTop.show{ opacity:1; transform:none; }
+
 
