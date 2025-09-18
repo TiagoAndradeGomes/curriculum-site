@@ -439,8 +439,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 	  </li>
 
     </ul>
-  </div>
- </div>
+   </div>
 </section>
 
 <!-- SKILLS -->
@@ -914,6 +913,8 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 
   </section>
 
+	<button id="toTop" class="btn btn-light" aria-label="Voltar ao topo">↑</button>
+
   <footer class="text-center">
     <p class="mb-0">© 2025 Tiago Andrade Gomes — Todos os direitos reservados</p>
   </footer>
@@ -924,93 +925,81 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
   
   <!-- 2) 𝗦𝗰𝗿𝗶𝗽𝘁𝘀 𝗰𝗼𝗺 𝗔𝗖𝗖𝗘𝗦𝗦𝗢 𝗮𝗼 𝗗𝗢𝗠 𝗲 𝗮𝗼 𝗕𝗼𝗼𝘁𝘀𝘁𝗿𝗮𝗽 -->
 <script>
-  /* ---------- Lightbox ---------- */
+  // AOS
+  AOS.init({
+    once: true,
+    duration: 800,
+    disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  });
+
+  // Navbar: cor ao fazer scroll + estado "mobile-open"
+  const mainNav = document.getElementById('mainNav');
+  const navCollapse = document.getElementById('navbarNav');
+
+  window.addEventListener('scroll', () => {
+    mainNav.classList.toggle('scrolled', window.scrollY > 50);
+  }, {passive:true});
+
+  navCollapse.addEventListener('show.bs.collapse', () => mainNav.classList.add('mobile-open'));
+  navCollapse.addEventListener('hide.bs.collapse', () => mainNav.classList.remove('mobile-open'));
+
+  // Fechar o menu móvel ao clicar num link
+  document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const instance = bootstrap.Collapse.getInstance(navCollapse);
+      if (instance) instance.hide();
+    });
+  });
+
+  // Lightbox (modal)
   const lightbox = document.getElementById('lightbox');
   const imgTag   = document.getElementById('lightbox-img');
   const capTag   = document.getElementById('lightbox-cap');
-
   lightbox.addEventListener('show.bs.modal', e => {
     const trigger = e.relatedTarget;
     imgTag.src         = trigger.dataset.bsImg;
     capTag.textContent = trigger.dataset.bsCaption || '';
   });
 
-  /* ---------- Navbar mobile-open ---------- */
-  const mainNav     = document.getElementById('mainNav');
-  const navCollapse = document.getElementById('navbarNav');
+  // Secção ativa + barra de progresso no topo
+  const progressBar = document.getElementById('scrollProgress');
+  const navLinksIO = [...document.querySelectorAll('#navbarNav .nav-link')];
 
-  navCollapse.addEventListener('show.bs.collapse', () => {
-    mainNav.classList.add('mobile-open');
-  });
-  navCollapse.addEventListener('hide.bs.collapse', () => {
-    mainNav.classList.remove('mobile-open');
-  });
-</script>
-  
-  <script>
-    AOS.init({once:true,duration:800});
-    // change navbar bg when scroll
-    const nav=document.getElementById('mainNav');
-    window.addEventListener('scroll',()=>{
-      nav.classList.toggle('scrolled',window.scrollY>50);
-    });
-
-    <script>
-  // Secção ativa + barra de progresso
-  const navLinks = [...document.querySelectorAll('#navbarNav .nav-link')];
-  const observedSections = navLinks
+  const sectionsToObserve = navLinksIO
     .map(a => a.getAttribute('href'))
-    .filter(href => href && href.startsWith('#'))
+    .filter(h => h && h.startsWith('#'))
     .map(sel => document.querySelector(sel))
     .filter(Boolean);
 
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){
-        const id = '#' + e.target.id;
-        navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href')===id));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = '#' + entry.target.id;
+        navLinksIO.forEach(a => a.classList.toggle('active', a.getAttribute('href') === id));
       }
     });
   }, { rootMargin: '-50% 0px -45% 0px', threshold: 0.01 });
 
-  observedSections.forEach(s => io.observe(s));
+  sectionsToObserve.forEach(s => io.observe(s));
 
-  // Barra de progresso no topo
-  const progressBar = document.getElementById('scrollProgress');
-  const onScrollProgress = ()=>{
+  const onScrollProgress = () => {
     const h = document.documentElement;
     const p = h.scrollTop / (h.scrollHeight - h.clientHeight);
-    if(progressBar) progressBar.style.width = (p*100) + '%';
+    progressBar.style.width = (p * 100) + '%';
   };
   window.addEventListener('scroll', onScrollProgress, {passive:true});
   onScrollProgress();
-</script>
 
-  </script>
-	
-	
-	<script>
-  /* ---------- Fechar navbar depois de clicar num link ---------- */
-  const navLinks   = document.querySelectorAll('#navbarNav .nav-link');
-  navLinks.forEach(link=>{
-    link.addEventListener('click', () => {
-      const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
-      bsCollapse && bsCollapse.hide();
-    });
-  });
-</script>
-	
-</body>
-<script>
+  // Botão "voltar ao topo"
   const toTop = document.getElementById('toTop');
-  const toggleToTop = ()=> toTop.classList.toggle('show', window.scrollY > 600);
+  const toggleToTop = () => toTop.classList.toggle('show', window.scrollY > 600);
   window.addEventListener('scroll', toggleToTop, {passive:true});
   toggleToTop();
-  toTop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+  toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 </script>
-
 	
 </html>
+
 
 
 
