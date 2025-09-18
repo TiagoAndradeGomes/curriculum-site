@@ -18,7 +18,7 @@
 </head>
 
 <body>
-
+<a class="skip-link" href="#about">Skip to content</a>
 
   <!-- NAVBAR -->
   <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-light">
@@ -955,23 +955,54 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
       nav.classList.toggle('scrolled',window.scrollY>50);
     });
 
-    // activate nav links on scroll
-    const sections=document.querySelectorAll('section');
-    const navLinks=document.querySelectorAll('.nav-link');
-    window.addEventListener('scroll',()=>{
-      let current="";
-      sections.forEach(sec=>{
-        const top=window.scrollY;
-        if(top>=sec.offsetTop-100){current=sec.getAttribute('id');}
-      });
-      navLinks.forEach(a=>{
-        a.classList.remove('active');
-        if(a.getAttribute('href').includes(current))a.classList.add('active');
-      });
+    <script>
+  // Secção ativa + barra de progresso
+  const navLinks = [...document.querySelectorAll('#navbarNav .nav-link')];
+  const observedSections = navLinks
+    .map(a => a.getAttribute('href'))
+    .filter(href => href && href.startsWith('#'))
+    .map(sel => document.querySelector(sel))
+    .filter(Boolean);
+
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const id = '#' + e.target.id;
+        navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href')===id));
+      }
     });
+  }, { rootMargin: '-50% 0px -45% 0px', threshold: 0.01 });
+
+  observedSections.forEach(s => io.observe(s));
+
+  // Barra de progresso no topo
+  const progressBar = document.getElementById('scrollProgress');
+  const onScrollProgress = ()=>{
+    const h = document.documentElement;
+    const p = h.scrollTop / (h.scrollHeight - h.clientHeight);
+    if(progressBar) progressBar.style.width = (p*100) + '%';
+  };
+  window.addEventListener('scroll', onScrollProgress, {passive:true});
+  onScrollProgress();
+</script>
+
   </script>
+	
+	
+	<script>
+  /* ---------- Fechar navbar depois de clicar num link ---------- */
+  const navLinks   = document.querySelectorAll('#navbarNav .nav-link');
+  navLinks.forEach(link=>{
+    link.addEventListener('click', () => {
+      const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+      bsCollapse && bsCollapse.hide();
+    });
+  });
+</script>
+	
 </body>
 </html>
+
 
 
 
