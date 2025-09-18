@@ -42,6 +42,12 @@ img{max-width:100%;height:auto;}
 
 .nav-link.active{color:var(--primary)!important;}
 
+#scrollProgress{
+  position:fixed; top:0; left:0; height:3px; width:0;
+  background:var(--primary); z-index:1031; /* > navbar bootstrap */
+}
+.navbar.scrolled{ backdrop-filter: blur(8px); } /* leve blur quando scrolled */
+
 /* -------- Hero -------- */
 #hero{
   min-height:100vh;
@@ -235,6 +241,16 @@ a:focus .article-card{
   outline-offset: 4px;
 }
 
+.skip-link{
+  position:absolute; left:-9999px; top:0;
+  background:#fff; color:#000; padding:.4rem .6rem;
+  z-index:2000; border-radius:.5rem; box-shadow:0 2px 6px rgba(0,0,0,.15);
+}
+.skip-link:focus{ left:16px; top:16px; }
+:focus-visible{ outline:3px solid var(--primary); outline-offset:2px; border-radius:8px; }
+section{ scroll-margin-top: 84px; } /* evita títulos tapados pelo navbar fixo */
+
+
 /* coloque mesmo no fim do ficheiro ---------------------------- */
 html,body{overflow-x:hidden;}
 
@@ -250,4 +266,5 @@ html,body{overflow-x:hidden;}
     color:#000 !important;              /* preto sólido */
   }
 }
+
 
