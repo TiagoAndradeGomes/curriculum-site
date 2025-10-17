@@ -291,5 +291,27 @@ html,body{overflow-x:hidden;}
 }
 #toTop.show{ opacity:1; transform:none; }
 
+/* Artigos & Conferências – ajustes leves */
+#articles .accordion-button { font-weight:600; }
+#articles .accordion-body { padding-top: 1rem; }
+#articles .article-card h6 { line-height: 1.25; }
+
+/* Years accordion: flat look (sem “caixas visíveis”) */
+#articles .accordion-item { border: 0; background: transparent; }
+#articles .accordion-button {
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+#articles .accordion-button:not(.collapsed) {
+  color: var(--dark);
+  background: transparent;
+}
+#articles .accordion-button::after { filter: grayscale(100%); opacity: .6; }
+#articles .accordion-body { padding-left: 0; padding-right: 0; }
+
 
 
