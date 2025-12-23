@@ -60,7 +60,7 @@ img{max-width:100%;height:auto;}
 #hero{
   min-height:100vh;
   background:linear-gradient(rgba(13,27,42,.55), rgba(13,27,42,.55)),
-             url('assets/hero-bim-gis.png') center/cover no-repeat;
+             url('Fundo.png') center/cover no-repeat;
   background-blend-mode: overlay;
   display:flex;
   align-items:center;
