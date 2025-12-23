@@ -60,7 +60,7 @@ img{max-width:100%;height:auto;}
 #hero{
   min-height:100vh;
   background:linear-gradient(rgba(13,27,42,.55), rgba(13,27,42,.55)),
-             url('assets/hero-bim-gis.png') center/cover no-repeat;
+             url('assets/hero-bim-gis.png.png') center/cover no-repeat;
   background-blend-mode: overlay;
   display:flex;
   align-items:center;
@@ -313,6 +313,7 @@ html,body{overflow-x:hidden;}
 }
 #articles .accordion-button::after { filter: grayscale(100%); opacity: .6; }
 #articles .accordion-body { padding-left: 0; padding-right: 0; }
+
 
 
 
