@@ -4,6 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tiago Andrade Gomes | BIM Manager</title>
+  <meta name="description" content="Engenheiro Civil e BIM Manager com experiência em grandes infraestruturas hidráulicas, coordenação BIM e integração SIG.">
+  <meta property="og:title" content="Tiago Andrade Gomes | BIM Manager">
+  <meta property="og:description" content="Engenheiro Civil e BIM Manager com experiência em grandes infraestruturas hidráulicas, coordenação BIM e integração SIG.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="FotoLinkedin1-600.webp">
+  <meta property="og:image:alt" content="Foto de Tiago Andrade Gomes">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
 
 <link rel="preload" as="image" href="FotoLinkedin1-600.webp" type="image/webp">
@@ -92,6 +99,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 <section id="experience" class="py-5">
   <div class="container" data-aos="fade-left">
     <h2 class="section-title">Experiência Profissional</h2>
+    <p class="text-muted mb-3">Resumo</p>
     <ul class="timeline list-unstyled">
         <li class="timeline-item">
           <h5>BIM Manager — CML ▪ PGDL</h5>
@@ -121,6 +129,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
     </button>
 
     <!-- ===== CONTEÚDO COMPLETO (COLLAPSE) ================================= -->
+    <p class="text-muted mb-3">Detalhe completo</p>
     <div id="fullExperience" class="collapse" aria-labelledby="experienceToggle">
       <div class="experience-body">
 
@@ -509,9 +518,10 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 <!-- SKILLS -->
 <section id="skills" class="py-5">
   <div class="container" data-aos="fade-right">
+    <h2 class="section-title">Competências</h2>
 
     <!-- ===== Competências Técnicas (barras) ================== -->
-    <h5 class="fw-semibold mb-3">Competências Técnicas</h5>
+    <h3 class="fw-semibold mb-3">Competências Técnicas</h3>
 
     <div class="skill-item mb-3">
       <span>Revit &amp; Navisworks</span>
@@ -539,7 +549,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
     </div>
 
     <!-- ===== Idiomas & Licenças ============================== -->
-    <h5 class="fw-semibold mb-2">Idiomas &amp; Licenças</h5>
+    <h3 class="fw-semibold mb-2">Idiomas &amp; Licenças</h3>
 
     <!-- Idiomas -->
     <p class="mb-1"><strong>Línguas</strong></p>
@@ -1183,7 +1193,8 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
           <img src="FotoLinkedin1.jfif"
      class="img-fluid rounded-4 shadow"
      alt="Foto de Tiago"
-     style="max-width:280px;">
+     style="max-width:280px;"
+     loading="lazy">
         </div>
       </div>
     </div>
@@ -1193,15 +1204,15 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 	  <form action="https://formsubmit.co/tiago.andrade.gomes@cm-lisboa.pt" method="POST">
 	    <div class="mb-3">
 	      <label for="formName" class="form-label">Nome</label>
-	      <input type="text" class="form-control" id="formName" name="name" required>
+	      <input type="text" class="form-control" id="formName" name="name" autocomplete="name" required>
 	    </div>
 	    <div class="mb-3">
 	      <label for="formEmail" class="form-label">Email</label>
-	      <input type="email" class="form-control" id="formEmail" name="email" required>
+	      <input type="email" class="form-control" id="formEmail" name="email" autocomplete="email" required>
 	    </div>
 	    <div class="mb-3">
 	      <label for="formMessage" class="form-label">Mensagem</label>
-	      <textarea class="form-control" id="formMessage" name="message" rows="4" required></textarea>
+	      <textarea class="form-control" id="formMessage" name="message" rows="4" autocomplete="off" required></textarea>
 	    </div>
 	    <!-- campo anti‑spam para o serviço formsubmit -->
 	    <input type="hidden" name="_captcha" value="false">
@@ -1250,6 +1261,18 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
       if (instance) instance.hide();
     });
   });
+
+  // Botão "Ver mais" da experiência (texto dinâmico)
+  const experienceToggle = document.querySelector('.experience-toggle');
+  const experienceCollapse = document.getElementById('fullExperience');
+  if (experienceToggle && experienceCollapse) {
+    experienceCollapse.addEventListener('show.bs.collapse', () => {
+      experienceToggle.textContent = 'Ver menos';
+    });
+    experienceCollapse.addEventListener('hide.bs.collapse', () => {
+      experienceToggle.textContent = 'Ver mais';
+    });
+  }
 
   // Lightbox (modal)
   const lightbox = document.getElementById('lightbox');
