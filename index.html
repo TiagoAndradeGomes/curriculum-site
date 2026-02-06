@@ -99,6 +99,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 <section id="experience" class="py-5">
   <div class="container" data-aos="fade-left">
     <h2 class="section-title">Experiência Profissional</h2>
+    <p class="text-muted mb-3">Resumo</p>
     <ul class="timeline list-unstyled">
         <li class="timeline-item">
           <h5>BIM Manager — CML ▪ PGDL</h5>
@@ -128,6 +129,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
     </button>
 
     <!-- ===== CONTEÚDO COMPLETO (COLLAPSE) ================================= -->
+    <p class="text-muted mb-3">Detalhe completo</p>
     <div id="fullExperience" class="collapse" aria-labelledby="experienceToggle">
       <div class="experience-body">
 
@@ -1259,6 +1261,18 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
       if (instance) instance.hide();
     });
   });
+
+  // Botão "Ver mais" da experiência (texto dinâmico)
+  const experienceToggle = document.querySelector('.experience-toggle');
+  const experienceCollapse = document.getElementById('fullExperience');
+  if (experienceToggle && experienceCollapse) {
+    experienceCollapse.addEventListener('show.bs.collapse', () => {
+      experienceToggle.textContent = 'Ver menos';
+    });
+    experienceCollapse.addEventListener('hide.bs.collapse', () => {
+      experienceToggle.textContent = 'Ver mais';
+    });
+  }
 
   // Lightbox (modal)
   const lightbox = document.getElementById('lightbox');
