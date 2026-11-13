@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
   <meta property="og:image" content="FotoLinkedin1-600.webp">
   <meta property="og:image:alt" content="Foto de Tiago Andrade Gomes">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="styles.css">
+
 
 <link rel="preload" as="image" href="FotoLinkedin1-600.webp" type="image/webp">
 
@@ -20,30 +20,26 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- AOS (scroll animations) -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+<link rel="alternate" hreflang="pt-PT" href="https://tiagoandradegomes.github.io/curriculum-site/"><link rel="alternate" hreflang="en" href="https://tiagoandradegomes.github.io/curriculum-site/index-en.html">
 </head>
 
-<body>
-<a class="skip-link" href="#about">Skip to content</a>
+<body><a class="skip-link" href="#about">Saltar para o conteúdo</a>
+
 
   <!-- NAVBAR -->
   <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-light">
     <div class="container">
       <a class="navbar-brand fw-semibold" href="#hero">Tiago Andrade Gomes</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <button class="navbar-toggler" aria-label="Abrir menu" aria-controls="navbarNav" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav gap-3">
-          <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experiência</a></li>
-	  <li class="nav-item"><a class="nav-link" href="#associacoes">Associações</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Formação</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Competências</a></li>
-          <li class="nav-item"><a class="nav-link" href="#articles">Artigos</a></li>
-		  <li class="nav-item"><a class="nav-link" href="#gallery">Galeria</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-		  <li class="nav-item"><a class="nav-link" href="index-en.html">EN</a></li>
-        </ul>
+<li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+<li class="nav-item"><a class="nav-link" href="#experience">Percurso</a></li>
+<li class="nav-item"><a class="nav-link" href="#associacoes">Associações</a></li>
+<li class="nav-item"><a class="nav-link" href="#articles">Publicações</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+<li class="nav-item"><a class="nav-link lang-switch" href="index-en.html" lang="en" aria-label="Read in English">EN</a></li></ul>
       </div>
     </div>
 	  <div id="scrollProgress" aria-hidden="true"></div>
@@ -52,7 +48,7 @@
   <!-- HERO -->
 <header id="hero">
   <div class="container">
-    <div class="hero-card mx-auto" data-aos="fade-up">
+    <div class="hero-card mx-auto">
       <div class="row g-4 align-items-center justify-content-center">
         <div class="col-md-4 text-center">
 			<picture>
@@ -67,16 +63,15 @@
 			  <!-- fallback JPEG (sempre funciona) -->
 			  <img src="FotoLinkedin1.jfif"
 			     class="hero-photo img-fluid rounded-circle shadow mb-3 mb-md-0"
-			     alt="Photo of Tiago"
+			     alt="Fotografia de Tiago Andrade Gomes"
 			     width="180" height="180"
 			     fetchpriority="high">
 			</picture>
 
         </div>
         <div class="col-md-8 text-md-start text-center">
-          <h1 class="hero-title mb-1">Tiago Andrade Gomes</h1>
-          <p class="hero-subtitle mb-4">Engenheiro Civil & BIM Manager</p>
-          <a href="#contact" class="btn btn-primary btn-lg">Contacta-me</a>
+          <p class="eyebrow">ENGENHARIA CIVIL · GESTÃO BIM · LISBOA</p><h1 class="hero-title mb-1">Tiago Andrade Gomes</h1>
+          <p class="hero-subtitle">Engenheiro Civil &amp; BIM Manager</p><p class="hero-statement">Gestão BIM do lado do dono de obra, em infraestruturas hidráulicas e subterrâneas.</p><p class="hero-context">Contratação, coordenação técnica e integração BIM–SIG no Plano Geral de Drenagem de Lisboa.</p><div class="hero-actions"><a href="#projects" class="btn btn-primary">Explorar projetos <span aria-hidden="true">↗</span></a><a href="TAG_Curriculum2Pag_20240320.pdf" class="btn btn-outline-primary" download>Descarregar CV</a></div>
         </div>
       </div>
     </div>
@@ -86,30 +81,27 @@
 
   <!-- ABOUT -->
   <section id="about">
-    <div class="container" data-aos="fade-right">
-      <h2 class="section-title">Sobre Mim</h2>
-      <p class="lead">Engenheiro Civil (Mestrado Integrado pelo Instituto Superior Técnico), BIM Manager com mais de 8 anos de experiência na gestão e execução de grandes infraestruturas hidráulicas e projetos subterrâneos complexos. Atualmente lidero a implementação de metodologias BIM no Plano Geral de Drenagem de Lisboa (PGDL), uma empreitada estratégica avaliada em 132 milhões de euros, com especial foco na integração entre BIM e Sistemas de Informação Geográfica (SIG), coordenação técnica multidisciplinar e gestão da informação.
-Complemento a minha formação base em engenharia civil com especializações em Coordenação BIM (ISEP) e Gestão (ISEG), reforçadas por uma sólida competência nas áreas de contratação pública, segurança no trabalho e pedagogia.
-Sou membro ativo de várias associações técnicas, destacando-se a participação no Conselho Diretivo da buildingSMART Portugal e a coordenação do grupo de trabalho BIM da Comissão Portuguesa de Túneis e do Espaço Subterrâneo (CPT), posições que envolvem iniciativas de normalização openBIM e atividades no setor dos túneis e espaço subterrâneo.
-</p>
-    </div>
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2><p class="lead">Engenheiro Civil pelo Instituto Superior Técnico, integro a equipa do Plano Geral de Drenagem de Lisboa (PGDL) desde julho de 2017 e exerço funções de BIM Manager desde janeiro de 2021.</p><p>Trabalho do lado do dono de obra na definição de requisitos, gestão da informação, coordenação multidisciplinar e integração entre BIM e Sistemas de Informação Geográfica (SIG). A empreitada dos túneis e intervenções associadas tem um valor contratual inicial de 132,9 M€ sem IVA.</p><p>Complemento a engenharia com pós-graduações em Coordenação BIM (ISEP) e Gestão (ISEG). Sou membro do Conselho Diretivo da buildingSMART Portugal e animador do GT4 da Comissão Portuguesa de Túneis e do Espaço Subterrâneo (CPT), agrupamento integrado na Sociedade Portuguesa de Geotecnia, com participação voluntária e não remunerada.</p></div>
   </section>
 
   <!-- EXPERIENCE -->
+<section id="projects"><div class="container"><p class="eyebrow">ENGENHARIA EM PRÁTICA</p><h2 class="section-title">Projetos e contributos</h2><p class="section-intro">Da definição dos requisitos à utilização da informação em obra.</p><div class="project-grid"><article class="project-card"><div class="project-visual visual-0" aria-hidden="true"><span>BIM / CDE</span></div><div class="project-copy"><p class="eyebrow">01 / DONO DE OBRA</p><h3>BIM nos túneis de drenagem de Lisboa</h3><p>Coordenação de informação entre dono de obra, projetistas, fiscalização e empreiteiro.</p><p class="project-tags">EIR · BEP · ACC · ISO 19650</p><details><summary>Explorar o caso</summary><h4>O meu contributo</h4><p>Definição de requisitos de informação, acompanhamento do BEP e gestão do CDE em Autodesk Construction Cloud.</p><h4>Aplicação</h4><p>Aplicação de rotinas de coordenação e controlo de qualidade de modelos, submissões e aprovações, com rastreabilidade das decisões.</p><a href="#experience">Consultar o percurso e as comunicações →</a></details></div></article><article class="project-card"><div class="project-visual visual-1" aria-hidden="true"><span>BIM ↔ GIS</span></div><div class="project-copy"><p class="eyebrow">02 / INTEGRAÇÃO</p><h3>BIM e SIG no contexto urbano</h3><p>Relacionar a informação dos modelos com o território e as redes existentes.</p><p class="project-tags">ArcGIS · WebScene · Informação de ativos</p><details><summary>Explorar o caso</summary><h4>O meu contributo</h4><p>Participação na prova de conceito BIM–SIG, com ArcGIS Pro e ArcGIS Online, em articulação com as equipas municipais.</p><h4>Aplicação</h4><p>Exploração conjunta de modelos e informação geográfica; atualização do traçado TMSA para integração na LX Interativa em setembro de 2026.</p><a href="#experience">Consultar o percurso e as comunicações →</a></details></div></article><article class="project-card"><div class="project-visual visual-2" aria-hidden="true"><span>EIR / IFC</span></div><div class="project-copy"><p class="eyebrow">03 / COLABORAÇÃO TÉCNICA</p><h3>Requisitos de informação para túneis</h3><p>Estruturar um exemplo de requisitos de troca de informação aplicável a obras subterrâneas.</p><p class="project-tags">openBIM · EIR · CPT / GT4 · ITA WG22</p><details><summary>Explorar o caso</summary><h4>O meu contributo</h4><p>Animação do GT4 da CPT e colaboração no desenvolvimento de um exemplo de EIR para projetos de túneis.</p><h4>Aplicação</h4><p>Apresentação conjunta «Exchange Information Requirements for Tunnel Projects: A Reference Example» no buildingSMART Porto Summit 2026.</p><a href="#articles">Consultar o percurso e as comunicações →</a></details></div></article></div></div></section>
+<section id="recent"><div class="container"><h2 class="section-title">Atividade recente</h2><p class="section-intro">Trabalho realizado e reconhecimento alcançado em 2026.</p><div class="recent-grid"><article class="recent-item"><p class="eyebrow">SET 2026</p><h3>Prémio Excelência BIM — finalista</h3><p>PGDL/CML finalista na categoria «Donos de Obra: Contratação e Gestão». Participação na preparação da candidatura e do vídeo de apresentação, enviado em setembro.</p></article><article class="recent-item"><p class="eyebrow">2026</p><h3>Modelos BIM em realidade virtual</h3><p>Participação em demonstrações do XR Viewer com modelos BIM e nuvens de pontos, explorando a leitura e comunicação do projeto em ambiente imersivo.</p></article><article class="recent-item"><p class="eyebrow">2026</p><h3>Organização e automatização da informação</h3><p>Centralização de procedimentos em Teams/SharePoint, com regras de nomenclatura, e desenvolvimento de automatizações VBA para controlo de transmittals.</p></article><article class="recent-item"><p class="eyebrow">2026</p><h3>Dossier técnico — ITA Tunnelling Awards</h3><p>Organização colaborativa e preparação do dossier de evidências técnicas para a candidatura do TMSA aos ITA Tunnelling Awards 2026, em articulação com as entidades envolvidas.</p></article></div></div></section>
 <section id="experience" class="py-5">
-  <div class="container" data-aos="fade-left">
-    <h2 class="section-title">Experiência Profissional</h2>
+  <div class="container">
+    <h2 class="section-title">Experiência Profissional</h2><div class="section-shortcuts"><a href="#education">Formação</a><a href="#skills">Competências</a><a href="#gallery">Galeria</a></div>
     <p class="text-muted mb-3">Resumo</p>
     <ul class="timeline list-unstyled">
         <li class="timeline-item">
           <h5>BIM Manager — CML ▪ PGDL</h5>
           <small class="text-muted">Jan 2021 – Presente</small>
-          <p>Implementação e gestão da metodologia BIM nos túneis de drenagem (132 M€) e na melhoria da bacia Q (3 M€), definição de BEP, integração SIG‑BIM e formação interna.</p>
+          <p>Implementação e gestão da metodologia BIM nos túneis de drenagem (contrato inicial de 132,9 M€ sem IVA), definição de BEP, integração SIG‑BIM e formação interna.</p>
         </li>
         <li class="timeline-item">
           <h5>Eng.º Civil — PGDL</h5>
           <small class="text-muted">Jul 2017 – Dez 2020</small>
-          <p>Acompanhamento de projeto, medições, concursos públicos e obra.</p>
+          <p>Acompanhamento de projeto, medições, concursos públicos e obra, incluindo a empreitada de drenagem da Bacia Q (aproximadamente 3 M€).</p>
         </li>
         <li class="timeline-item">
           <h5>Estágios Profissionais</h5>
@@ -119,7 +111,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
       </ul>
    
     <!-- ===== BOTÃO DE EXPANSÃO / RECOLHA ================================== -->
-    <button class="btn btn-outline-primary mb-3 experience-toggle"
+    <button id="experienceToggle" class="btn btn-outline-primary mb-3 experience-toggle"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#fullExperience"
@@ -129,7 +121,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
     </button>
 
     <!-- ===== CONTEÚDO COMPLETO (COLLAPSE) ================================= -->
-    <p class="text-muted mb-3">Detalhe completo</p>
+    
     <div id="fullExperience" class="collapse" aria-labelledby="experienceToggle">
       <div class="experience-body">
 
@@ -147,7 +139,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
           <p>
             Atuo como BIM Manager na empreitada mais relevante e complexa da Câmara Municipal de Lisboa,
             dedicada à execução dos túneis pluviais e intervenções associadas do Plano Geral de Drenagem
-            de Lisboa, com um investimento global aproximado de 132 M€.
+            de Lisboa, com um valor contratual inicial de 132,9 M€ sem IVA.
           </p>
           <p>
             O meu papel enquadra-se numa lógica de dono de obra, assegurando a implementação, gestão e
@@ -211,7 +203,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
           <ul class="bullet-list">
             <li>Definição da estratégia de integração entre modelos BIM e sistemas SIG da Câmara Municipal de Lisboa.</li>
             <li>Estruturação de dados orientada à gestão de ativos, manutenção e operação a longo prazo.</li>
-            <li>Enquadramento do BIM como base para evolução futura para Digital Twin das infraestruturas subterrâneas.</li>
+            <li>Estruturação da informação para apoiar a gestão das infraestruturas subterrâneas.</li>
           </ul>
 
           <hr class="my-4">
@@ -313,7 +305,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 
 <!-- ASSOCIACOES -->
 <section id="associacoes">
-  <div class="container" data-aos="fade-right">
+  <div class="container">
     <h2 class="section-title">Associações &amp; Liderança</h2>
 
     <ul class="list-unstyled">
@@ -325,8 +317,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
       </li>
 
       <li class="mb-3">
-        <strong>Membro e Animador do Grupo 4 (BIM) – CPT</strong>
-        <small class="text-muted d-block">(mar. 2021&nbsp;–&nbsp;presente)</small>
+        <strong>Membro e Animador do GT4 (BIM) – CPT</strong><small class="text-muted d-block">Membro desde mar. 2021 · Animador desde 7 mar. 2024</small>
         <p class="mb-0">Coordenação da adoção do BIM em obras subterrâneas, em articulação com o ITA WG 22.</p>
       </li>
 
@@ -364,7 +355,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 	
 <!-- EDUCATION -->
 <section id="education">
-  <div class="container" data-aos="fade-right">
+  <div class="container">
     <h2 class="section-title">Formação Académica &amp; Complementar</h2>
 
     <ul class="timeline list-unstyled">
@@ -517,38 +508,10 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 
 <!-- SKILLS -->
 <section id="skills" class="py-5">
-  <div class="container" data-aos="fade-right">
-    <h2 class="section-title">Competências</h2>
+  <div class="container">
+    
 
-    <!-- ===== Competências Técnicas (barras) ================== -->
-    <h3 class="fw-semibold mb-3">Competências Técnicas</h3>
-
-    <div class="skill-item mb-3">
-      <span>Revit &amp; Navisworks</span>
-      <div class="progress"><div class="progress-bar" style="width:95%"></div></div>
-    </div>
-
-    <div class="skill-item mb-3">
-      <span>Autodesk Construction Cloud</span>
-      <div class="progress"><div class="progress-bar" style="width:100%"></div></div>
-    </div>
-
-    <div class="skill-item mb-3">
-      <span>AutoCAD &amp; MS Project</span>
-      <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
-    </div>
-
-    <div class="skill-item mb-3">
-      <span>VBA / Python</span>
-      <div class="progress"><div class="progress-bar" style="width:60%"></div></div>
-    </div>
-
-    <div class="skill-item mb-4">
-      <span>SWMM &amp; EPANET</span>
-      <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
-    </div>
-
-    <!-- ===== Idiomas & Licenças ============================== -->
+<h2 class="section-title">Competências aplicadas</h2><div class="skills-grid"><article><h3>Gestão da informação</h3><p>EIR, BEP, ISO 19650 e controlo de entregáveis.</p></article><article><h3>CDE e colaboração</h3><p>Autodesk Construction Cloud: fluxos, acessos, revisões e aprovações.</p></article><article><h3>Coordenação e planeamento</h3><p>Revit, Navisworks, AutoCAD e MS Project; coordenação de modelos e planeamento 4D.</p></article><article><h3>BIM–SIG e análise</h3><p>ArcGIS Pro/Online, WebScene e Power BI para explorar e comunicar informação.</p></article><article><h3>Automatização</h3><p>Excel/VBA aplicado a transmittals; formação em Python.</p></article><article><h3>Engenharia hidráulica</h3><p>SWMM e EPANET, contratação pública e acompanhamento técnico de obra.</p></article></div>    <!-- ===== Idiomas & Licenças ============================== -->
     <h3 class="fw-semibold mb-2">Idiomas &amp; Licenças</h3>
 
     <!-- Idiomas -->
@@ -556,7 +519,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
     <ul class="mb-3">
       <li>Português — materna</li>
       <li>Inglês — utilizador avançado (C1)</li>
-      <li>Espanhol — nível básico (B1)</li>
+      <li>Espanhol — B1</li>
     </ul>
 
     <!-- Licenças (menor destaque) -->
@@ -573,8 +536,8 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 
 <!-- ARTICLES e Conferências-->
 <section id="articles">
-  <div class="container" data-aos="fade-right">
-    <h2 class="section-title">Artigos &amp; Conferências</h2>
+  <div class="container">
+    <h2 class="section-title">Publicações e intervenções</h2>
 
     <!-- Destaques / Highlights -->
     <div class="row g-4 mb-4">
@@ -638,7 +601,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
     </div>
 
     <!-- Por ano / By year -->
-    <div class="accordion" id="acYears">
+    <div class="publication-tools"><div class="search-field"><label for="publicationSearch">Pesquisar publicações</label><input id="publicationSearch" type="search" placeholder="Título, evento, autor ou palavra-chave…" autocomplete="off"></div><div><label for="publicationYear">Ano</label><select id="publicationYear"><option value="">Todos</option></select></div><div><label for="publicationType">Tipo</label><select id="publicationType"><option value="">Todos</option><option value="0">Artigo</option><option value="1">Apresentação</option><option value="2">Resumo</option><option value="3">Comunicação</option><option value="4">Participação</option></select></div><div><label for="publicationTopic">Tema</label><select id="publicationTopic"><option value="">Todos</option><option value="0">BIM / Digital</option><option value="1">Túneis / Geotecnia</option><option value="2">Água / Resiliência</option></select></div><button id="publicationReset" type="button" class="btn btn-outline-primary">Limpar filtros</button></div><p id="publicationCount" class="small text-muted" role="status" aria-live="polite"></p><p id="publicationEmpty" hidden>Não foram encontrados resultados. Experimenta outros filtros.</p><div class="accordion" id="acYears">
 
       <!-- ========== 2026 ========== -->
       <div class="accordion-item">
@@ -652,8 +615,8 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
                 <div class="card article-card p-3 h-100" data-source="TAG_ArtApr_20260617.xlsx">
                   <h6 class="fw-semibold mb-2">World Tunnel Congress (WTC 2026)</h6>
                   <ul class="small mb-0 ps-3">
-                    <li><strong>Apresentação:</strong> 14 mai 2026 · Managing TBM tunnels in urban environment, from Lisbon Drainage Master Plan - the owner&#x27;s perspective<span class="d-block text-muted">Apresentadores: Gonçalo Diniz Vieira; José Silva Ferreira; João V. Boas; Paulo Gordinho; Tiago Andrade Gomes</span></li>
-                    <li><strong>Apresentação:</strong> 14 mai 2026 · BIM from Tender to Construction: Lisbon Drainage Master Plan<span class="d-block text-muted">Apresentadores: Tiago Andrade Gomes</span></li>
+                    <li><strong>Apresentação:</strong> mai 2026 · Managing TBM tunnels in urban environment, from Lisbon Drainage Master Plan - the owner&#x27;s perspective<span class="d-block text-muted">Apresentadores: Gonçalo Diniz Vieira; José Silva Ferreira; João V. Boas; Paulo Gordinho; Tiago Andrade Gomes</span></li>
+                    <li><strong>Apresentação:</strong> mai 2026 · BIM from Tender to Construction: Lisbon Drainage Master Plan<span class="d-block text-muted">Apresentadores: Tiago Andrade Gomes</span></li>
                     <li><strong>Artigo:</strong> Digital BIM from Tender to Construction: Lisbon Drainage Master Plan<span class="d-block text-muted">Autor: Tiago Andrade Gomes · Coautores: Gonçalo Diniz Vieira, António Hipólito, Catarina Feio, Luís Ribeirinho, Ricardo Resende</span></li>
                     <li><strong>Resumo:</strong> Digital BIM from Tender to Construction: Lisbon Drainage Master Plan<span class="d-block text-muted">Autor: Tiago Andrade Gomes · Coautores: Gonçalo Diniz Vieira, António Hipólito, Catarina Feio, Luís Ribeirinho, Ricardo Resende</span></li>
                   </ul>
@@ -717,7 +680,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
                 <div class="card article-card p-3 h-100" data-source="TAG_ArtApr_20260617.xlsx">
                   <h6 class="fw-semibold mb-2">ENEG 2025</h6>
                   <ul class="small mb-0 ps-3">
-                    <li><strong>Apresentação:</strong> 13 nov 2025 · Plano Geral de Drenagem de Lisboa: transição digital e integração BIM e SIG<span class="d-block text-muted">Apresentadores: Tiago Andrade Gomes</span></li>
+                    <li><strong>Apresentação:</strong> 18 nov 2025 · Plano Geral de Drenagem de Lisboa: transição digital e integração BIM e SIG<span class="d-block text-muted">Apresentadores: Tiago Andrade Gomes</span></li>
                     <li><strong>Artigo:</strong> Plano Geral de Drenagem de Lisboa: transição digital e integração BIM e SIG<span class="d-block text-muted">Autor: Tiago Andrade Gomes · Coautores: Gonçalo Diniz Vieira, Paulo Gordinho, José Silva Ferreira</span></li>
                     <li><strong>Resumo alargado:</strong> Plano Geral de Drenagem de Lisboa: transição digital e integração BIM e SIG<span class="d-block text-muted">Autor: Tiago Andrade Gomes · Coautores: Gonçalo Diniz Vieira, Paulo Gordinho, José Silva Ferreira</span></li>
                   </ul>
@@ -1127,8 +1090,8 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
   </div>
 </section>
 <section id="gallery" class="py-5">
-  <div class="container" data-aos="fade-right">
-    <h2 class="section-title mb-4">Galeria de Apresentações</h2>
+  <div class="container">
+    <h2 class="section-title mb-4">Galeria</h2><p class="section-intro">Apresentações e partilha técnica. Seleciona uma fotografia para ver o contexto.</p>
 
     <div class="row g-3">
      
@@ -1297,11 +1260,11 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 </section>
 
 <!-- ========== LIGHTBOX (Bootstrap Modal) ============================== -->
-<div class="modal fade" id="lightbox" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="lightbox" tabindex="-1" aria-hidden="true" aria-label="Galeria">
   <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-transparent border-0">
+    <div class="modal-content bg-transparent border-0"><button type="button" class="lightbox-close" data-bs-dismiss="modal" aria-label="Fechar">×</button>
       <img id="lightbox-img" class="img-fluid rounded-4" alt="">
-      <p id="lightbox-cap" class="text-center text-white mt-2"></p>
+      <div class="lightbox-navigation"><button type="button" id="galleryPrev" aria-label="Fotografia anterior">←</button><span id="galleryPosition" aria-live="polite"></span><button type="button" id="galleryNext" aria-label="Fotografia seguinte">→</button></div><p id="lightbox-cap" class="text-center text-white mt-2"></p>
     </div>
   </div>
 </div>
@@ -1309,14 +1272,14 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 
   <!-- CONTACT -->
   <section id="contact">
-    <div class="container" data-aos="fade-left">
+    <div class="container">
       <h2 class="section-title">Contacto</h2>
       <div class="row align-items-center">
         <div class="col-lg-6">
           <p class="lead mb-2"><strong>Email profissional:</strong> <a href="mailto:tiago.andrade.gomes@cm-lisboa.pt">tiago.andrade.gomes@cm-lisboa.pt</a></p>
           <p class="lead mb-2"><strong>Email pessoal:</strong> <a href="mailto:tiago.c.a.gomes@gmail.com">tiago.c.a.gomes@gmail.com</a></p>
           <p class="lead mb-2"><strong>Telemóvel:</strong> <a href="tel:+351911068127">+351 911 068 127</a></p>
-          <p class="lead"><strong>LinkedIn:</strong> <a href="https://pt.linkedin.com/in/tiagoandradegomes" target="_blank">/tiagoandradegomes</a></p>
+          <p class="lead"><strong>LinkedIn:</strong> <a href="https://pt.linkedin.com/in/tiagoandradegomes" target="_blank" rel="noopener noreferrer">/tiagoandradegomes</a></p>
         </div>
         <div class="col-lg-6 text-center">
           <img src="FotoLinkedin1.jfif"
@@ -1328,7 +1291,7 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
       </div>
     </div>
 
-	<div class="mt-4">
+	<div class="container contact-form mt-4">
 	  <h4>Enviar mensagem</h4>
 	  <form action="https://formsubmit.co/tiago.andrade.gomes@cm-lisboa.pt" method="POST">
 	    <div class="mb-3">
@@ -1355,114 +1318,11 @@ Sou membro ativo de várias associações técnicas, destacando-se a participaç
 
 	<button id="toTop" class="btn btn-light" aria-label="Voltar ao topo">↑</button>
 
-  <footer class="text-center">
-    <p class="mb-0">© 2025 Tiago Andrade Gomes — Todos os direitos reservados</p>
+  <footer class="text-center"><p class="small">Conteúdo atualizado em novembro de 2026</p>
+    <p class="mb-0">© 2026 Tiago Andrade Gomes — Todos os direitos reservados</p>
   </footer>
 
-  <!-- JS → Bootstrap, AOS & navbar scroll effect -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  
-  <!-- 2) 𝗦𝗰𝗿𝗶𝗽𝘁𝘀 𝗰𝗼𝗺 𝗔𝗖𝗖𝗘𝗦𝗦𝗢 𝗮𝗼 𝗗𝗢𝗠 𝗲 𝗮𝗼 𝗕𝗼𝗼𝘁𝘀𝘁𝗿𝗮𝗽 -->
-<script>
-  // AOS
-  AOS.init({
-    once: true,
-    duration: 800,
-    disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  });
-
-  // Navbar: cor ao fazer scroll + estado "mobile-open"
-  const mainNav = document.getElementById('mainNav');
-  const navCollapse = document.getElementById('navbarNav');
-
-  window.addEventListener('scroll', () => {
-    mainNav.classList.toggle('scrolled', window.scrollY > 50);
-  }, {passive:true});
-
-  navCollapse.addEventListener('show.bs.collapse', () => mainNav.classList.add('mobile-open'));
-  navCollapse.addEventListener('hide.bs.collapse', () => mainNav.classList.remove('mobile-open'));
-
-  // Fechar o menu móvel ao clicar num link
-  document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      const instance = bootstrap.Collapse.getInstance(navCollapse);
-      if (instance) instance.hide();
-    });
-  });
-
-  // Botão "Ver mais" da experiência (texto dinâmico)
-  const experienceToggle = document.querySelector('.experience-toggle');
-  const experienceCollapse = document.getElementById('fullExperience');
-  if (experienceToggle && experienceCollapse) {
-    experienceCollapse.addEventListener('show.bs.collapse', () => {
-      experienceToggle.textContent = 'Ver menos';
-    });
-    experienceCollapse.addEventListener('hide.bs.collapse', () => {
-      experienceToggle.textContent = 'Ver mais';
-    });
-  }
-
-  // Lightbox (modal)
-  const lightbox = document.getElementById('lightbox');
-  const imgTag   = document.getElementById('lightbox-img');
-  const capTag   = document.getElementById('lightbox-cap');
-  lightbox.addEventListener('show.bs.modal', e => {
-    const trigger = e.relatedTarget;
-    imgTag.src         = trigger.dataset.bsImg;
-    capTag.textContent = trigger.dataset.bsCaption || '';
-  });
-
-  // Secção ativa + barra de progresso no topo
-  const progressBar = document.getElementById('scrollProgress');
-  const navLinksIO = [...document.querySelectorAll('#navbarNav .nav-link')];
-
-  const sectionsToObserve = navLinksIO
-    .map(a => a.getAttribute('href'))
-    .filter(h => h && h.startsWith('#'))
-    .map(sel => document.querySelector(sel))
-    .filter(Boolean);
-
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = '#' + entry.target.id;
-        navLinksIO.forEach(a => a.classList.toggle('active', a.getAttribute('href') === id));
-      }
-    });
-  }, { rootMargin: '-50% 0px -45% 0px', threshold: 0.01 });
-
-  sectionsToObserve.forEach(s => io.observe(s));
-
-  const onScrollProgress = () => {
-    const h = document.documentElement;
-    const p = h.scrollTop / (h.scrollHeight - h.clientHeight);
-    progressBar.style.width = (p * 100) + '%';
-  };
-  window.addEventListener('scroll', onScrollProgress, {passive:true});
-  onScrollProgress();
-
-  // Botão "voltar ao topo"
-  const toTop = document.getElementById('toTop');
-  const toggleToTop = () => toTop.classList.toggle('show', window.scrollY > 600);
-  window.addEventListener('scroll', toggleToTop, {passive:true});
-  toggleToTop();
-  toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-</script>
-	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="site.js" defer></script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

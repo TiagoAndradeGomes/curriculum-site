@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tiago Andrade Gomes | BIM Manager</title>
-  <link rel="stylesheet" href="styles.css">
+
 
   <link rel="preload" as="image" href="FotoLinkedin1-600.webp" type="image/webp">
 
@@ -12,51 +12,46 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- AOS (scroll animations) -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-</head>
+  <link rel="stylesheet" href="styles.css">
+<link rel="alternate" hreflang="pt-PT" href="https://tiagoandradegomes.github.io/curriculum-site/"><link rel="alternate" hreflang="en" href="https://tiagoandradegomes.github.io/curriculum-site/index-en.html">
+<meta name="description" content="Civil Engineer and owner-side BIM Manager: information management, underground infrastructure and BIM–GIS integration."></head>
 
-<body>
+<body><a class="skip-link" href="#about">Skip to content</a>
   <!-- NAVBAR -->
   <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-light">
     <div class="container">
       <a class="navbar-brand fw-semibold" href="#hero">Tiago Andrade Gomes</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" aria-label="Open menu" aria-controls="navbarNav" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav gap-3">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-	  <li class="nav-item"><a class="nav-link" href="#associations">Associations</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#articles">Articles</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-		  <li class="nav-item"><a class="nav-link" href="index.html">PT</a></li>
-        </ul>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+<li class="nav-item"><a class="nav-link" href="#associations">Associations</a></li>
+<li class="nav-item"><a class="nav-link" href="#articles">Publications</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item"><a class="nav-link lang-switch" href="index.html" lang="pt-PT" aria-label="Ler em português">PT</a></li></ul>
       </div>
     </div>
-  </nav>
+  <div id="scrollProgress" aria-hidden="true"></div></nav>
 
   <!-- HERO -->
   <header id="hero">
     <div class="container">
-      <div class="hero-card mx-auto" data-aos="fade-up">
+      <div class="hero-card mx-auto">
         <div class="row g-4 align-items-center justify-content-center">
           <div class="col-md-4 text-center">
             <picture>
               <!-- WEBP (if supported) -->
               <source type="image/webp" srcset="FotoLinkedin1-300.webp 300w, FotoLinkedin1-600.webp 600w, FotoLinkedin1-900.webp 900w" sizes="(max-width: 576px) 80vw, 280px">
               <!-- JPEG fallback -->
-              <img src="FotoLinkedin1.jfif" class="hero-photo img-fluid rounded-circle shadow mb-3 mb-md-0" alt="Photo of Tiago" width="180" height="180" loading="lazy">
+              <img src="FotoLinkedin1.jfif" class="hero-photo img-fluid rounded-circle shadow mb-3 mb-md-0" alt="Photograph of Tiago Andrade Gomes" width="180" height="180" fetchpriority="high">
             </picture>
           </div>
           <div class="col-md-8 text-md-start text-center">
-            <h1 class="hero-title mb-1">Tiago Andrade Gomes</h1>
-            <p class="hero-subtitle mb-4">Civil Engineer &amp; BIM Manager</p>
-            <a href="#contact" class="btn btn-primary btn-lg">Contact Me</a>
+            <p class="eyebrow">CIVIL ENGINEERING · BIM MANAGEMENT · LISBON</p><h1 class="hero-title mb-1">Tiago Andrade Gomes</h1>
+            <p class="hero-subtitle">Civil Engineer &amp; BIM Manager</p><p class="hero-statement">Owner-side BIM management for hydraulic and underground infrastructure.</p><p class="hero-context">Procurement, technical coordination and BIM–GIS integration for the Lisbon Drainage Master Plan.</p><div class="hero-actions"><a href="#projects" class="btn btn-primary">Explore projects <span aria-hidden="true">↗</span></a><a href="CURRICULUM_2026_EN.pdf" class="btn btn-outline-primary" download>Download CV</a></div>
           </div>
         </div>
       </div>
@@ -65,21 +60,16 @@
 
   <!-- ABOUT -->
   <section id="about">
-    <div class="container" data-aos="fade-right">
-      <h2 class="section-title">About Me</h2>
-      <p class="lead">Civil Engineer (Integrated Master's Degree from Instituto Superior Técnico), BIM Manager with over 8 years of experience managing and executing large-scale hydraulic infrastructure and complex underground projects. Currently, I lead the implementation of BIM methodologies for the Lisbon Drainage Master Plan (PGDL), a strategic project valued at €132 million, with a particular emphasis on integrating BIM with Geographic Information Systems (GIS), multidisciplinary technical coordination, and information management.
-
-My core training in civil engineering is complemented by specializations in BIM Coordination (ISEP) and Management (ISEG), supported by solid expertise in public procurement, occupational safety, and training.
-
-I am an active member of various technical associations, notably serving on the Board of Directors of buildingSMART Portugal and coordinating the BIM working group of the Portuguese Tunnelling and Underground Space Commission (CPT). These roles involve initiatives promoting openBIM standardization and activities within the tunneling and underground construction sector.
-</p>
-    </div>
+    <div class="container">
+      <h2 class="section-title">About Me</h2><p class="lead">A Civil Engineer trained at Instituto Superior Técnico, I have been part of the Lisbon Drainage Master Plan (PGDL) team since July 2017 and have served as BIM Manager since January 2021.</p><p>I work on the owner's side, defining requirements, managing information, coordinating disciplines and integrating BIM with Geographic Information Systems (GIS). The initial contract value for the tunnels and associated works is €132.9 million excluding VAT.</p><p>My engineering background is complemented by postgraduate qualifications in BIM Coordination (ISEP) and Management (ISEG). I am a Board Member of buildingSMART Portugal and convenor of GT4 at the Portuguese Tunnelling and Underground Space Commission (CPT), a group within the Portuguese Geotechnical Society whose members contribute on a voluntary, unpaid basis.</p></div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section id="experience" class="py-5">
-    <div class="container" data-aos="fade-left">
-      <h2 class="section-title">Professional Experience</h2>
+  <section id="projects"><div class="container"><p class="eyebrow">ENGINEERING IN PRACTICE</p><h2 class="section-title">Projects and contributions</h2><p class="section-intro">From defining requirements to using information during construction.</p><div class="project-grid"><article class="project-card"><div class="project-visual visual-0" aria-hidden="true"><span>BIM / CDE</span></div><div class="project-copy"><p class="eyebrow">01 / PROJECT OWNER</p><h3>BIM for Lisbon's drainage tunnels</h3><p>Coordinating information between the owner, designers, supervision team and contractor.</p><p class="project-tags">EIR · BEP · ACC · ISO 19650</p><details><summary>Explore this case</summary><h4>My contribution</h4><p>Defining information requirements, reviewing the BEP and managing the Common Data Environment in Autodesk Construction Cloud.</p><h4>Application</h4><p>Applying coordination and model quality checks to submissions and approvals, with traceable decisions.</p><a href="#experience">Explore experience and publications →</a></details></div></article><article class="project-card"><div class="project-visual visual-1" aria-hidden="true"><span>BIM ↔ GIS</span></div><div class="project-copy"><p class="eyebrow">02 / INTEGRATION</p><h3>BIM and GIS in an urban context</h3><p>Connecting model information with the territory and existing utilities.</p><p class="project-tags">ArcGIS · WebScene · Asset information</p><details><summary>Explore this case</summary><h4>My contribution</h4><p>Contributing to the BIM–GIS proof of concept using ArcGIS Pro and ArcGIS Online, in collaboration with municipal teams.</p><h4>Application</h4><p>Exploring models and geographic information together; updating the TMSA alignment for integration into LX Interativa in September 2026.</p><a href="#experience">Explore experience and publications →</a></details></div></article><article class="project-card"><div class="project-visual visual-2" aria-hidden="true"><span>EIR / IFC</span></div><div class="project-copy"><p class="eyebrow">03 / TECHNICAL COLLABORATION</p><h3>Information requirements for tunnels</h3><p>Structuring a reference example of exchange information requirements for underground works.</p><p class="project-tags">openBIM · EIR · CPT / GT4 · ITA WG22</p><details><summary>Explore this case</summary><h4>My contribution</h4><p>Convening CPT GT4 and collaborating on the development of a tunnel project EIR reference example.</p><h4>Application</h4><p>Joint presentation of “Exchange Information Requirements for Tunnel Projects: A Reference Example” at buildingSMART Porto Summit 2026.</p><a href="#articles">Explore experience and publications →</a></details></div></article></div></div></section>
+<section id="recent"><div class="container"><h2 class="section-title">Recent activity</h2><p class="section-intro">Work delivered and recognition achieved in 2026.</p><div class="recent-grid"><article class="recent-item"><p class="eyebrow">SEP 2026</p><h3>BIM Excellence Award — finalist</h3><p>PGDL/Lisbon City Council shortlisted in the “Project Owners: Procurement and Management” category. Contribution to the submission and presentation video delivered in September.</p></article><article class="recent-item"><p class="eyebrow">2026</p><h3>BIM models in virtual reality</h3><p>Participation in XR Viewer demonstrations using BIM models and point clouds, exploring immersive project interpretation and communication.</p></article><article class="recent-item"><p class="eyebrow">2026</p><h3>Information organisation and automation</h3><p>Centralisation of procedures in Teams/SharePoint with naming rules, and development of VBA automation for transmittal tracking.</p></article><article class="recent-item"><p class="eyebrow">2026</p><h3>Technical dossier — ITA Tunnelling Awards</h3><p>Collaborative organisation and preparation of the technical evidence dossier for the TMSA submission to the ITA Tunnelling Awards 2026, working with the organisations involved.</p></article></div></div></section>
+<section id="experience" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2><div class="section-shortcuts"><a href="#education">Education</a><a href="#skills">Skills</a><a href="#gallery">Gallery</a></div>
       <ul class="timeline list-unstyled">
         <li class="timeline-item">
           <h5>BIM Manager — Lisbon City Council ▪ PGDL</h5>
@@ -97,107 +87,26 @@ I am an active member of various technical associations, notably serving on the 
           <p>Lisbon City Council (hydraulic structures) and Consulgal (Quinta da Bomba WWTP).</p>
         </li>
       </ul>
-      <button class="btn btn-outline-primary mb-3 experience-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#fullExperience" aria-expanded="false" aria-controls="fullExperience">Show more</button>
-      <div id="fullExperience" class="collapse" aria-labelledby="experienceToggle">
-        <div class="experience-body">
-          <!-- CML – PGDL -->
-          <article class="experience-card">
-            <header>
-              <h5>BIM Manager / Civil Engineer — Lisbon City Council • PGDL</h5>
-              <small class="text-muted">Jan 2021 – Present (BIM Manager) | Jul 2017 – Dec 2020 (Civil Engineer)</small>
-            </header>
-            <p>I act as BIM Manager on the most significant and complex contract undertaken by Lisbon City Council — construction of the storm‑water tunnels and associated works (≈ €132 M). I lead BIM implementation from design through to operational integration with the Council’s GIS systems.</p>
-            <ul class="bullet-list">
-              <li><strong>BIM Implementation &amp; Information Management</strong>
-                <ul class="bullet-list">
-                  <li>Overall coordination of the BIM methodology throughout the project life‑cycle;</li>
-                  <li>Definition of technical requirements/specifications (LOD, formats, BEP, intellectual‑property rights);</li>
-                  <li>Management and control of information produced by internal and external teams;</li>
-                  <li>Workflow and access structuring in Autodesk Construction Cloud (ACC).</li>
-                </ul>
-              </li>
-              <li><strong>Technical Coordination &amp; Training</strong>
-                <ul class="bullet-list">
-                  <li>Continuous Revit and Navisworks training for multidisciplinary teams;</li>
-                  <li>Chairing BIM coordination and technical meetings.</li>
-                </ul>
-              </li>
-              <li><strong>BIM‑GIS Integration &amp; Asset Management</strong>
-                <ul class="bullet-list">
-                  <li>Integration strategy linking BIM models with the Council’s GIS and asset‑management systems to enhance maintenance and operation.</li>
-                </ul>
-              </li>
-              <li><strong>Support to Tunnel Contract Management</strong>
-                <ul class="bullet-list">
-                  <li>Drafting the Tender Programme (PC) and Specifications (CE);</li>
-                  <li>Technical analysis of bids and award reports;</li>
-                  <li>Site monitoring and approval of the execution design;</li>
-                  <li>Coordination of site investigations, tests and complementary studies (including scale models at LNEC);</li>
-                  <li>Jury member for related public tenders.</li>
-                </ul>
-              </li>
-            </ul>
-          </article>
-          <!-- Civil Engineer PGDL -->
-          <article class="experience-card">
-            <header>
-              <h5>Civil Engineer — PGDL</h5>
-              <small class="text-muted">Jul 2017 – Dec 2020</small>
-            </header>
-            <ul class="bullet-list">
-              <li><strong>Support to Tunnel Contract Management</strong>
-                <ul class="bullet-list">
-                  <li>Drafting the Tender Programme (PC) and Specifications (CE);</li>
-                  <li>Technical analysis of bids and award reports;</li>
-                  <li>Site monitoring and approval of the execution design;</li>
-                  <li>Coordination of site investigations, tests and complementary studies (including scale models at LNEC);</li>
-                  <li>Jury member for related public tenders.</li>
-                </ul>
-              </li>
-              <li><strong>Basin Q Drainage Contract (Parque das Nações)</strong>
-                <ul class="bullet-list">
-                  <li>Drainage system improvement (≈ €3 M) — new flow splitters, collectors (micro‑tunnelling) and infrastructure rehabilitation;</li>
-                  <li>Participation in planning, execution and site supervision;</li>
-                  <li>Jury member on tenders associated with the contract.</li>
-                </ul>
-              </li>
-            </ul>
-          </article>
-          <!-- Internship CML -->
-          <article class="experience-card">
-            <header>
-              <h5>Professional Development Internship — Lisbon City Council</h5>
-              <small class="text-muted">Feb 2017 – May 2017</small>
-            </header>
-            <p>Technical work on hydraulic structures and storm‑water networks, including preliminary design validation and sizing studies under the PGDL.</p>
-            <p>Practical complement to academic training.</p>
-          </article>
-          <!-- Consulgal -->
-          <article class="experience-card">
-            <header>
-              <h5>Intern — Consulgal Consulting Engineers</h5>
-              <small class="text-muted">Jul 2013</small>
-            </header>
-            <p>Participation in supervision, quality control and conflict management activities on site.</p>
-            <p>Technical analysis and problem‑solving during hydraulic and environmental works.</p>
-          </article>
-          <!-- Event -->
-          <article class="experience-card">
-            <header>
-              <h5>Staff Member — II Startup MEET UP Lisbon</h5>
-              <small class="text-muted">Jun 2016</small>
-            </header>
-            <p>Organisational and logistical coordination of more than 100 business meetings.</p>
-            <p>Development of methodological and organisational skills in a corporate environment.</p>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
+      <button id="experienceToggle" class="btn btn-outline-primary mb-3 experience-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#fullExperience" aria-expanded="false" aria-controls="fullExperience">Show more</button>
+      <div id="fullExperience" class="collapse" aria-labelledby="experienceToggle"><div class="experience-body">
+<article class="experience-card"><h3>BIM Manager / Civil Engineer</h3><p>Lisbon City Council — Lisbon Drainage Master Plan (PGDL)</p><p class="text-muted">Jan 2021–Present (BIM Manager) | Jul 2017–Dec 2020 (Civil Engineer)</p>
+<p>Owner-side BIM implementation and information management for the drainage tunnels and associated works, with an initial contract value of €132.9 million excluding VAT.</p>
+<h4>BIM implementation, ISO 19650 and information management</h4><ul><li>Coordination across the owner, designers, supervision team and contractor.</li><li>Definition of Exchange Information Requirements (EIR), information needs, IFC deliverables, responsibilities, intellectual property rights and acceptance criteria.</li><li>Review and monitoring of the BIM Execution Plan (BEP), with quality assurance and quality control of geometry and information.</li></ul>
+<h4>Common Data Environment — Autodesk Construction Cloud</h4><ul><li>Configuration of workflows, information states, permissions and submission rules.</li><li>Monitoring of submissions, revisions, approvals and audit trails against contractual requirements.</li></ul>
+<h4>Technical coordination and training</h4><ul><li>Chairing BIM and technical coordination meetings, recording decisions, actions, owners and deadlines.</li><li>Practical support and training for multidisciplinary teams; liaison between technical teams, contract management and information systems.</li></ul>
+<h4>BIM–GIS integration and asset information</h4><ul><li>Definition of the integration strategy between BIM models and the Council's Geographic Information Systems (GIS).</li><li>Structuring information to support asset management, maintenance and operation; development of a BIM–GIS proof of concept.</li></ul>
+<h4>Public procurement, contract management and technical monitoring</h4><ul><li>Preparation of tender programmes and specifications, including BIM requirements; technical bid assessment and contributions to award reports.</li><li>Contract manager for the PGDL BIM support services contract: technical follow-up, deliverable review and contractual compliance.</li><li>Participation in other procurement procedures as procedure coordinator and tender jury member.</li><li>Technical monitoring of design and construction, investigations, tests and complementary studies, including LNEC scale models of vortex spillways and anti-pollution basins; technical review of detailed designs.</li></ul></article>
+<article class="experience-card"><h3>Civil Engineer — Basin Q Drainage Works</h3><p class="text-muted">Parque das Nações | within 2017–2020 | approximately €3 million</p><p>Involvement from tender preparation and assessment through to construction monitoring: new flow splitters, microtunnelled sewers and rehabilitation of existing infrastructure. Technical coordination with the supervision team and contractor; participation in associated tender juries.</p></article>
+<article class="experience-card"><h3>Professional Development Internship — Lisbon City Council</h3><p class="text-muted">Feb–May 2017</p><p>Technical support on hydraulic structures and stormwater networks under the PGDL, including preliminary design and sizing studies.</p></article>
+<article class="experience-card"><h3>Intern — Consulgal Consulting Engineers</h3><p class="text-muted">July 2013</p><p>Support to construction supervision and quality control, addressing non-conformities and developing technical analysis and conflict management skills.</p></article>
+<article class="experience-card"><h3>Staff Member — II Startup MEET UP Lisbon</h3><p class="text-muted">June 2016</p><p>Organisational and logistical coordination of more than 100 business meetings.</p></article>
+</div></div>
+</div></section>
+
 
 <!-- ASSOCIATIONS -->
 <section id="associations">
-  <div class="container" data-aos="fade-right">
+  <div class="container">
     <h2 class="section-title">Associations &amp; Leadership</h2>
 
     <ul class="list-unstyled">
@@ -209,8 +118,7 @@ I am an active member of various technical associations, notably serving on the 
       </li>
 
       <li class="mb-3">
-        <strong>Member &amp; Coordinator of BIM Group 4 – CPT</strong>
-        <small class="text-muted d-block">(Mar 2021&nbsp;–&nbsp;present)</small>
+        <strong>Member and Convenor of GT4 (BIM) – CPT</strong><small class="text-muted d-block">Member since Mar 2021 · Convenor since 7 Mar 2024</small>
         <p class="mb-0">Leads BIM adoption in underground works, aligned with ITA WG 22.</p>
       </li>
 
@@ -248,7 +156,7 @@ I am an active member of various technical associations, notably serving on the 
 	
   <!-- EDUCATION -->
   <section id="education">
-    <div class="container" data-aos="fade-right">
+    <div class="container">
       <h2 class="section-title">Academic &amp; Complementary Education</h2>
       <ul class="timeline list-unstyled">
         <!-- Integrated Master -->
@@ -340,37 +248,9 @@ I am an active member of various technical associations, notably serving on the 
 
 <!-- SKILLS -->
 <section id="skills" class="py-5">
-  <div class="container" data-aos="fade-right">
+  <div class="container">
 
-    <!-- ===== Technical Skills (progress bars) ================ -->
-    <h5 class="fw-semibold mb-3">Technical Skills</h5>
-
-    <div class="skill-item mb-3">
-      <span>Revit &amp; Navisworks</span>
-      <div class="progress"><div class="progress-bar" style="width:95%"></div></div>
-    </div>
-
-    <div class="skill-item mb-3">
-      <span>Autodesk Construction Cloud</span>
-      <div class="progress"><div class="progress-bar" style="width:100%"></div></div>
-    </div>
-
-    <div class="skill-item mb-3">
-      <span>AutoCAD &amp; MS Project</span>
-      <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
-    </div>
-
-    <div class="skill-item mb-3">
-      <span>VBA / Python</span>
-      <div class="progress"><div class="progress-bar" style="width:60%"></div></div>
-    </div>
-
-    <div class="skill-item mb-4">
-      <span>SWMM &amp; EPANET</span>
-      <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
-    </div>
-
-    <!-- ===== Languages & Licences ============================ -->
+<h2 class="section-title">Applied skills</h2><div class="skills-grid"><article><h3>Information management</h3><p>EIR, BEP, ISO 19650 and deliverable quality control.</p></article><article><h3>CDE and collaboration</h3><p>Autodesk Construction Cloud: workflows, access, revisions and approvals.</p></article><article><h3>Coordination and planning</h3><p>Revit, Navisworks, AutoCAD and MS Project; model coordination and 4D planning.</p></article><article><h3>BIM–GIS and analysis</h3><p>ArcGIS Pro/Online, WebScene and Power BI for information exploration and communication.</p></article><article><h3>Automation</h3><p>Excel/VBA applied to transmittals; training in Python.</p></article><article><h3>Hydraulic engineering</h3><p>SWMM and EPANET, public procurement and technical construction monitoring.</p></article></div>    <!-- ===== Languages & Licences ============================ -->
     <h5 class="fw-semibold mb-2">Languages &amp; Licences</h5>
 
     <!-- Languages -->
@@ -378,7 +258,7 @@ I am an active member of various technical associations, notably serving on the 
     <ul class="mb-3">
       <li>Portuguese — native</li>
       <li>English — advanced (C1)</li>
-      <li>Spanish — basic (B1)</li>
+      <li>Spanish — B1</li>
     </ul>
 
     <!-- Licences (lower emphasis) -->
@@ -395,8 +275,8 @@ I am an active member of various technical associations, notably serving on the 
 
 <!-- ARTICLES & CONFERENCES -->
 <section id="articles">
-  <div class="container" data-aos="fade-right">
-    <h2 class="section-title">Articles &amp; Conferences</h2>
+  <div class="container">
+    <h2 class="section-title">Publications and talks</h2>
 
     <!-- Destaques / Highlights -->
     <div class="row g-4 mb-4">
@@ -460,7 +340,7 @@ I am an active member of various technical associations, notably serving on the 
     </div>
 
     <!-- Por ano / By year -->
-    <div class="accordion" id="acYears-en">
+    <div class="publication-tools"><div class="search-field"><label for="publicationSearch">Search publications</label><input id="publicationSearch" type="search" placeholder="Title, event, author or keyword…" autocomplete="off"></div><div><label for="publicationYear">Year</label><select id="publicationYear"><option value="">All</option></select></div><div><label for="publicationType">Type</label><select id="publicationType"><option value="">All</option><option value="0">Paper</option><option value="1">Presentation</option><option value="2">Abstract</option><option value="3">Communication</option><option value="4">Participation</option></select></div><div><label for="publicationTopic">Topic</label><select id="publicationTopic"><option value="">All</option><option value="0">BIM / Digital</option><option value="1">Tunnels / Geotechnics</option><option value="2">Water / Resilience</option></select></div><button id="publicationReset" type="button" class="btn btn-outline-primary">Clear filters</button></div><p id="publicationCount" class="small text-muted" role="status" aria-live="polite"></p><p id="publicationEmpty" hidden>No results found. Try different filters.</p><div class="accordion" id="acYears-en">
 
       <!-- ========== 2026 ========== -->
       <div class="accordion-item">
@@ -474,8 +354,8 @@ I am an active member of various technical associations, notably serving on the 
                 <div class="card article-card p-3 h-100" data-source="TAG_ArtApr_20260617.xlsx">
                   <h6 class="fw-semibold mb-2">World Tunnel Congress (WTC 2026)</h6>
                   <ul class="small mb-0 ps-3">
-                    <li><strong>Presentation:</strong> 14 May 2026 · Managing TBM tunnels in urban environment, from Lisbon Drainage Master Plan - the owner&#x27;s perspective<span class="d-block text-muted">Presenters: Gonçalo Diniz Vieira; José Silva Ferreira; João V. Boas; Paulo Gordinho; Tiago Andrade Gomes</span></li>
-                    <li><strong>Presentation:</strong> 14 May 2026 · BIM from Tender to Construction: Lisbon Drainage Master Plan<span class="d-block text-muted">Presenters: Tiago Andrade Gomes</span></li>
+                    <li><strong>Presentation:</strong> May 2026 · Managing TBM tunnels in urban environment, from Lisbon Drainage Master Plan - the owner&#x27;s perspective<span class="d-block text-muted">Presenters: Gonçalo Diniz Vieira; José Silva Ferreira; João V. Boas; Paulo Gordinho; Tiago Andrade Gomes</span></li>
+                    <li><strong>Presentation:</strong> May 2026 · BIM from Tender to Construction: Lisbon Drainage Master Plan<span class="d-block text-muted">Presenters: Tiago Andrade Gomes</span></li>
                     <li><strong>Paper:</strong> Digital BIM from Tender to Construction: Lisbon Drainage Master Plan<span class="d-block text-muted">Author: Tiago Andrade Gomes · Co-authors: Gonçalo Diniz Vieira, António Hipólito, Catarina Feio, Luís Ribeirinho, Ricardo Resende</span></li>
                     <li><strong>Abstract:</strong> Digital BIM from Tender to Construction: Lisbon Drainage Master Plan<span class="d-block text-muted">Author: Tiago Andrade Gomes · Co-authors: Gonçalo Diniz Vieira, António Hipólito, Catarina Feio, Luís Ribeirinho, Ricardo Resende</span></li>
                   </ul>
@@ -539,7 +419,7 @@ I am an active member of various technical associations, notably serving on the 
                 <div class="card article-card p-3 h-100" data-source="TAG_ArtApr_20260617.xlsx">
                   <h6 class="fw-semibold mb-2">ENEG 2025</h6>
                   <ul class="small mb-0 ps-3">
-                    <li><strong>Presentation:</strong> 13 Nov 2025 · Plano Geral de Drenagem de Lisboa: transição digital e integração BIM e SIG<span class="d-block text-muted">Presenters: Tiago Andrade Gomes</span></li>
+                    <li><strong>Presentation:</strong> 18 Nov 2025 · Plano Geral de Drenagem de Lisboa: transição digital e integração BIM e SIG<span class="d-block text-muted">Presenters: Tiago Andrade Gomes</span></li>
                     <li><strong>Paper:</strong> Plano Geral de Drenagem de Lisboa: transição digital e integração BIM e SIG<span class="d-block text-muted">Author: Tiago Andrade Gomes · Co-authors: Gonçalo Diniz Vieira, Paulo Gordinho, José Silva Ferreira</span></li>
                     <li><strong>Extended abstract:</strong> Plano Geral de Drenagem de Lisboa: transição digital e integração BIM e SIG<span class="d-block text-muted">Author: Tiago Andrade Gomes · Co-authors: Gonçalo Diniz Vieira, Paulo Gordinho, José Silva Ferreira</span></li>
                   </ul>
@@ -949,8 +829,8 @@ I am an active member of various technical associations, notably serving on the 
   </div>
 </section>
 <section id="gallery" class="py-5">
-    <div class="container" data-aos="fade-right">
-      <h2 class="section-title mb-4">Presentation Gallery</h2>
+    <div class="container">
+      <h2 class="section-title mb-4">Gallery</h2><p class="section-intro">Presentations and technical exchange. Select a photograph to explore its context.</p>
       <div class="row g-3">
         <!-- Photo 1 -->
         <div class="col-6 col-md-4 col-lg-3">
@@ -1029,25 +909,25 @@ I am an active member of various technical associations, notably serving on the 
   </section>
 
   <!-- LIGHTBOX -->
-  <div class="modal fade" id="lightbox" tabindex="-1" aria-hidden="true">
+  <div class="modal fade" id="lightbox" tabindex="-1" aria-hidden="true" aria-label="Gallery">
     <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content bg-transparent border-0">
+      <div class="modal-content bg-transparent border-0"><button type="button" class="lightbox-close" data-bs-dismiss="modal" aria-label="Close">×</button>
         <img id="lightbox-img" class="img-fluid rounded-4" alt="">
-        <p id="lightbox-cap" class="text-center text-white mt-2"></p>
+        <div class="lightbox-navigation"><button type="button" id="galleryPrev" aria-label="Previous photograph">←</button><span id="galleryPosition" aria-live="polite"></span><button type="button" id="galleryNext" aria-label="Next photograph">→</button></div><p id="lightbox-cap" class="text-center text-white mt-2"></p>
       </div>
     </div>
   </div>
 
   <!-- CONTACT -->
   <section id="contact">
-    <div class="container" data-aos="fade-left">
+    <div class="container">
       <h2 class="section-title">Contact</h2>
       <div class="row align-items-center">
         <div class="col-lg-6">
           <p class="lead mb-2"><strong>Work email:</strong> <a href="mailto:tiago.andrade.gomes@cm-lisboa.pt">tiago.andrade.gomes@cm-lisboa.pt</a></p>
           <p class="lead mb-2"><strong>Personal email:</strong> <a href="mailto:tiago.c.a.gomes@gmail.com">tiago.c.a.gomes@gmail.com</a></p>
           <p class="lead mb-2"><strong>Mobile:</strong> <a href="tel:+351911068127">+351 911 068 127</a></p>
-          <p class="lead"><strong>LinkedIn:</strong> <a href="https://pt.linkedin.com/in/tiagoandradegomes" target="_blank">/tiagoandradegomes</a></p>
+          <p class="lead"><strong>LinkedIn:</strong> <a href="https://pt.linkedin.com/in/tiagoandradegomes" target="_blank" rel="noopener noreferrer">/tiagoandradegomes</a></p>
         </div>
         <div class="col-lg-6 text-center">
           <img src="FotoLinkedin1.jfif" class="img-fluid rounded-4 shadow" alt="Photo of Tiago" style="max-width:280px;">
@@ -1055,7 +935,7 @@ I am an active member of various technical associations, notably serving on the 
       </div>
     </div>
 
-	<div class="mt-4">
+	<div class="container contact-form mt-4">
 	  <h4>Send a message</h4>
 	  <form action="https://formsubmit.co/tiago.andrade.gomes@cm-lisboa.pt" method="POST">
 	    <div class="mb-3">
@@ -1080,71 +960,11 @@ I am an active member of various technical associations, notably serving on the 
 	  
   </section>
 
-  <footer class="text-center">
-    <p class="mb-0">© 2025 Tiago Andrade Gomes — All rights reserved</p>
+  <button id="toTop" class="btn btn-light" aria-label="Back to top" hidden>↑</button><footer class="text-center"><p class="small">Content updated in November 2026</p>
+    <p class="mb-0">© 2026 Tiago Andrade Gomes — All rights reserved</p>
   </footer>
 
-  <!-- JS: Bootstrap, AOS & navbar scroll effect -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-  <!-- Lightbox & Navbar behaviour -->
-  <script>
-    /* ---------- Lightbox ---------- */
-    const lightbox = document.getElementById('lightbox');
-    const imgTag   = document.getElementById('lightbox-img');
-    const capTag   = document.getElementById('lightbox-cap');
-
-    lightbox.addEventListener('show.bs.modal', e => {
-      const trigger = e.relatedTarget;
-      imgTag.src         = trigger.dataset.bsImg;
-      capTag.textContent = trigger.dataset.bsCaption || '';
-    });
-
-    /* ---------- Navbar mobile-open ---------- */
-    const mainNav     = document.getElementById('mainNav');
-    const navCollapse = document.getElementById('navbarNav');
-
-    navCollapse.addEventListener('show.bs.collapse', () => {
-      mainNav.classList.add('mobile-open');
-    });
-    navCollapse.addEventListener('hide.bs.collapse', () => {
-      mainNav.classList.remove('mobile-open');
-    });
-  </script>
-  <script>
-    AOS.init({once:true,duration:800});
-    // change navbar background when scrolling
-    const nav = document.getElementById('mainNav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 50);
-    });
-
-    // activate nav links on scroll
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-link');
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(sec => {
-        const top = window.scrollY;
-        if (top >= sec.offsetTop - 100) { current = sec.getAttribute('id'); }
-      });
-      navLinks.forEach(a => {
-        a.classList.remove('active');
-        if (a.getAttribute('href').includes(current)) a.classList.add('active');
-      });
-    });
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="site.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
