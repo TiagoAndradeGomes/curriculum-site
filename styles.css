@@ -60,7 +60,7 @@ img{max-width:100%;height:auto;}
 #hero{
   min-height:100vh;
   background:linear-gradient(rgba(13,27,42,.55), rgba(13,27,42,.55)),
-             url('assets/hero-bim-gis.png') center/cover no-repeat;
+             url('assets/hero-santa-apolonia-bim-2026.jpg') center/cover no-repeat;
   background-blend-mode: overlay;
 
   /* NOVO */
@@ -345,7 +345,7 @@ h1,h2,h3,h4{letter-spacing:-.025em;}
 .navbar-brand{font-size:1rem;}
 .nav-link{font-size:.82rem;}
 .lang-switch{border:1px solid currentColor;border-radius:6px;text-align:center;min-width:40px;}
-#hero{min-height:660px;min-height:82svh;padding:8.5rem 0 5rem;background-position:center 34%;background-blend-mode:normal;background-image:linear-gradient(90deg,rgba(9,30,46,.84),rgba(9,30,46,.40)),url('assets/hero-bim-gis.png');}
+#hero{min-height:660px;min-height:82svh;padding:8.5rem 0 5rem;background-position:center center;background-blend-mode:normal;background-image:linear-gradient(90deg,rgba(9,30,46,.42),rgba(9,30,46,.14)),url('assets/hero-santa-apolonia-bim-2026.jpg');}
 .hero-card{max-width:1080px;padding:3rem;background:rgba(255,255,255,.97);border-radius:18px;box-shadow:0 22px 60px #071b2a44;}
 .hero-photo{width:215px;height:215px;}
 .hero-title{font-size:clamp(1.9rem,3.4vw,2.7rem);font-weight:600;line-height:1.12;}
